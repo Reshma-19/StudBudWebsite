@@ -8,11 +8,9 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/favicon.png" type="image/gif" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
+  <link rel="icon" href="images/favicon1.jpg" type="image/gif" />
+  <meta name="keywords" content="HTML CSS Java Python JavaScript StudBud studbud web technologies" />
+  <meta name="description" content="courses" />
   <title>StudBud</title>
 
 
@@ -30,7 +28,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <link rel="stylesheet" type="text/css" href="css/donate.css" />
 </head>
 
 <body class="sub_page">
@@ -56,16 +54,16 @@
                   <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="index.html#about">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="course.html">Courses <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html#courses">Courses <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                  <a class="nav-link" href="index.html#contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="donate.html">Donate</a>
+                  <a class="nav-link" href="#">Donate</a>
                 </li>
               </ul>
             </div>
@@ -77,27 +75,29 @@
 
     <!-- Donate section -->
 
-
-
         <section class="cover">
             <div id="box">
-                <div class="container">
-                    <h3>Fill in your details</h3>
-                    <div class="a1">
-                        <p>First Name:</p>
-                        <input type="text" required>
-                    </div>
-                    <div class="a2">
-                        <p>Last Name:</p>
-                        <input name="text" required>
-                    </div>
-                    <div class="a3">
-                        <p>Address:</p>
-                        <input type="text" maxlength="50">
-                    </div>
-                    <div class="btn_donate">
-                      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JsAKU3ijGucVV6" async> </script> </form>
-                    </div>
+              <br/>
+              <br/>
+                <div class="container1">
+                  <div>
+                    <h3 class="text-center">DONATE</h3>
+                    <p>Please fill in your details to let us make this a better source for you!.</p>
+                    <hr/>
+
+                    <label for="fn"><b>Full Name: </b></label>
+                    <input type="text" placeholder=" Enter Full Name" name="fn" id="fn" maxlength="25" required/>
+
+                    <label for="phn"><b>Phone No: </b></label>
+                    <input type="tel" pattern="+91[0-9]{10}" placeholder="+91xxxxxxxxxx" name="phn" id="phn" required/>
+
+                    <label for="age"><b>Age: </b></label>
+                    <input type="number" placeholder="Enter your Age" min="18" max="70" name="age" id="age" maxlength="2" required/>
+                    <hr/>
+                  </div>
+                  <div class="btn_donate text-center">
+                    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JsAKU3ijGucVV6" async> </script></form>
+                  </div>
                 </div>
             </div>
         </section>
